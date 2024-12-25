@@ -17,6 +17,13 @@ const prizes = [
   'RMB520元'
 ];
 
+let min = 0;
+let max = 7;
+let randomInt1 = Math.floor(Math.random() * (max - min + 1)) + min;
+let randomInt2 = Math.floor(Math.random() * (max - min + 1)) + min;
+let prizeOrder = [randomInt1, randomInt2, 0]; 
+prizeOrder.sort(() => Math.random() - 0.5);
+
 function highlightCell(index) {
   cells.forEach((cell, i) => {
     cell.classList.toggle('highlight', i === index);
@@ -37,6 +44,8 @@ function startLottery() {
     highlightCell(currentIndex);
 
     if (rounds >= 3 && speed >= 500) {
+      currentIndex = prizeOrder[attempts];
+      highlightCell(currentIndex);
       clearInterval(interval);
       const prize = cells[currentIndex].getAttribute('data-prize');
       setTimeout(() => {
