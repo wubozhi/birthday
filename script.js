@@ -33,8 +33,8 @@ function startLottery() {
   let speed = 100;
   let rounds = 0;
   interval = setInterval(() => {
-    highlightCell(currentIndex);
     currentIndex = (currentIndex + 1) % cells.length;
+    highlightCell(currentIndex);
 
     if (rounds >= 3 && speed >= 500) {
       clearInterval(interval);
