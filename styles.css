@@ -56,7 +56,8 @@ body {
 
 .footer {
   margin-top: 20px;
-  background-color: rgba(255, 182, 193, 0.6);
+/*   background-color: rgba(255, 182, 193, 0.6); */
+  background-color: #ffe4e1;
   padding: 5px;
   border-radius: 0px;
   text-align: bottom;
@@ -64,7 +65,7 @@ body {
 }
 
 .background-bottom {
-  height: 100px;
+  height: 600px;
   background: url('tail.jpg') no-repeat center center / cover;
 }
 
