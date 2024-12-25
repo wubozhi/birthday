@@ -40,7 +40,7 @@ function startLottery() {
       clearInterval(interval);
       const prize = cells[currentIndex].getAttribute('data-prize');
       setTimeout(() => {
-        alert(`恭喜你!亲爱的，你抽中了：${prize}`);
+        alert(`恭喜你! 亲爱的，你抽中了：\n ${prize}`);
       }, 200);
       return;
     }
