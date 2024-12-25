@@ -11,7 +11,7 @@ body {
 
 .background-top {
   height: 200px;
-  background: url('birthday-bg-top.jpg') no-repeat center center / cover;
+  background: url('header.jpg') no-repeat center center / cover;
 }
 
 .header-text {
@@ -35,7 +35,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 80px;
-  background-color: #ffffff;
+  background-color: #ffe4e1;
   border: 2px solid #dee2e6;
   border-radius: 8px;
   font-size: 16px;
@@ -60,7 +60,7 @@ body {
 
 .background-bottom {
   height: 100px;
-  background: url('birthday-bg-bottom.jpg') no-repeat center center / cover;
+  background: url('tail.jpg') no-repeat center center / cover;
 }
 
 .tips {
