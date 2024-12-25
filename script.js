@@ -21,7 +21,7 @@ let min = 0;
 let max = 7;
 let randomInt1 = Math.floor(Math.random() * (max - min + 1)) + min;
 let randomInt2 = Math.floor(Math.random() * (max - min + 1)) + min;
-let prizeOrder = [randomInt1, randomInt2, 0]; 
+let prizeOrder = [randomInt1, randomInt2, 1]; 
 prizeOrder.sort(() => Math.random() - 0.5);
 
 function highlightCell(index) {
