@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f8f9fa;
+}
+
+.header {
+  position: relative;
+}
+
+.background-top {
+  height: 200px;
+  background: url('birthday-bg-top.jpg') no-repeat center center / cover;
+}
+
+.header-text {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+}
+
+.lottery-container {
+  margin: 20px auto;
+  max-width: 300px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  background-color: #ffffff;
+  border: 2px solid #dee2e6;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cell#draw-button {
+  background-color: #007bff;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cell.highlight {
+  background-color: #ffc107 !important;
+}
+
+.footer {
+  margin-top: 20px;
+}
+
+.background-bottom {
+  height: 100px;
+  background: url('birthday-bg-bottom.jpg') no-repeat center center / cover;
+}
+
+.tips {
+  padding: 10px;
+  font-size: 14px;
+  color: #6c757d;
+}
