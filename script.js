@@ -14,8 +14,7 @@ const prizes = [
   'YSL口红一支',
   '海鲜自助餐一顿',
   '小辣鱼若干包',
-  'RMB520元',
-  '男朋友香吻一个'
+  'RMB520元'
 ];
 
 function highlightCell(index) {
