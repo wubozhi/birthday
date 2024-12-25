@@ -26,7 +26,7 @@ function highlightCell(index) {
 
 function startLottery() {
   if (attempts >= maxAttempts) {
-    alert('已用完三次抽奖机会！');
+    alert('抽奖机会用完了哦，明年再来好吗？亲爱的');
     return;
   }
 
@@ -41,7 +41,7 @@ function startLottery() {
       clearInterval(interval);
       const prize = cells[currentIndex].getAttribute('data-prize');
       setTimeout(() => {
-        alert(`恭喜你获得：${prize}`);
+        alert(`恭喜你!亲爱的，你抽中了：${prize}`);
       }, 200);
       return;
     }
