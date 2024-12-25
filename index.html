@@ -29,12 +29,16 @@
   </div>
   <div class="footer">
   <style>
-  ul, ol {
-    padding-left: 0; /* 去掉内边距 */
-    margin-left: 0;  /* 去掉外边距 */
+  ul {
+    list-style: none; /* 移除默认符号 */
+    padding: 0;
   }
   li {
-    text-align: left; /* 确保文本左对齐 */
+    width: 50%;               /* 设置宽度，让 li 居中 */
+    margin: 0 auto;           /* 让整个 li 在父容器中居中 */
+    text-align: left;         /* 文本左对齐 */
+    border: 1px solid #ccc;   /* 边框方便查看效果 */
+    padding: 10px;
   }
   </style>
       <p>温馨提示：</p>
